@@ -1,101 +1,98 @@
-# 🏋️‍♂️ Gym Poder - Aplicación Web Angular
+ # 🏋️‍♂️ GYM PODER
 
-![Angular](https://img.shields.io/badge/Angular-17-DD0031?style=for-the-badge&logo=angular&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-blue.style=for-the-badge)
+  **Una plataforma web moderna, receptiva y de alto rendimiento para la gestión y promoción de gimnasios.**
 
-**Gym Poder** es una aplicación web moderna orientada a la gestión y presentación de un gimnasio. Desarrollada con Angular, cuenta con una arquitectura modular enfocada en componentes reutilizables, secciones informativas de alto impacto (*Landing Page*) y soporte para una óptima experiencia de usuario.
+  [![Angular](https://img.shields.io/badge/Angular-17.3-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
+  [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
+  [![License](https://img.shields.io/badge/License-MIT-green.style=for-the-badge)](LICENSE)
 
----
+  <br />
 
-## 🚀 Características Principales
+  [Explorar Funcionalidades](#-funcionalidades-clave) •
+  [Instalación](#-instalación-rápida) •
+  [Estructura](#-arquitectura-del-proyecto) •
+  [Contacto](#-contacto)
 
-- **Landing Page Interactiva**: Sección inicial (*Hero*), presentación (*Nosotros*), galería de *Productos* y promociones destacadas.
-- **Formulario de Contacto**: Canales directos de comunicación e interacción con el cliente.
-- **Navegación Fluida**: Barra de navegación (*Navbar*) y pie de página (*Footer*) dinámicos con el enrutador de Angular.
-- **Estructura Escalable**: Organización por módulos y componentes utilizando la metodología de arquitectura *Core* y *Features*.
-
----
-
-## 🛠️ Tecnologías Utilizadas
-
-- **Framework**: [Angular 17+](https://angular.io/)
-- **Lenguaje**: [TypeScript](https://www.typescriptlang.org/)
-- **Estilos**: CSS3 / Responsive Web Design
-- **Gestor de Paquetes**: Node Package Manager (npm)
+</div>
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📌 Visión General
+
+**Gym Poder** es una aplicación SPA (*Single Page Application*) desarrollada con **Angular 17**, estructurada bajo una arquitectura modular limpia y escalable. Su diseño visualmente atractivo está orientado a maximizar la conversión de clientes a través de secciones informativas, promociones en tiempo real y una experiencia de usuario (UX) ágil y responsiva.
+
+---
+
+## ⚡ Funcionalidades Clave
+
+| Módulo / Sección | Descripción |
+| :--- | :--- |
+| **🏠 Hero Section** | Banner principal con llamada a la acción (*CTA*) de alto impacto. |
+| **🥊 Nos / Acerca** | Presentación institucional de la marca, filosofía y entrenadores. |
+| **🏷️ Promociones** | Muestrario de ofertas especiales y planes de membresía. |
+| **🛍️ Productos** | Catálogo interactivo de suplementos y equipamiento. |
+| **📩 Contacto** | Formulario dinámico y canales directos de atención al cliente. |
+
+---
+
+## 🛠️ Stack Tecnológico
+
+* **Core**: Angular 17.3+, TypeScript 5.x
+* **Estructura HTML**: HTML5 Semántico
+* **Estilos**: CSS3 Modular & Flexbox / Grid Layouts
+* **Herramientas de Desarrollo**: Angular CLI, Node.js, Git, VS Code
+
+---
+
+## 📂 Arquitectura del Proyecto
+
+El código sigue las mejores prácticas de Angular utilizando la metodología **Core / Features / Shared**:
 
 ```text
 gym-poder/
-├── src/
-│   ├── app/
-│   │   ├── core/                  # Módulos y servicios globales
-│   │   ├── features/              # Funcionalidades principales
-│   │   │   └── landing/           # Landing page del gimnasio
-│   │   │       ├── components/    # Navbar, Hero, Productos, etc.
-│   │   │       └── pages/         # Páginas principales (Inicio)
-│   │   └── shared/                # Componentes y pipes compartidos
-│   ├── assets/                    # Imágenes y recursos estáticos
-│   ├── index.html
-│   ├── main.ts
-│   └── styles.css                 # Estilos globales
-├── angular.json
-└── package.json
+ ├── 📄 angular.json
+ ├── 📄 package.json
+ └── 📁 src/
+      ├── 📁 app/
+      │    ├── 📁 core/                 # Servicios globales y guardias
+      │    ├── 📁 features/             # Módulos de funcionalidades
+      │    │    └── 📁 landing/
+      │    │         ├── 📁 components/ # Hero, Navbar, Footer, Productos, Promo
+      │    │         └── 📁 pages/      # Vistas completas (Inicio)
+      │    └── 📁 shared/               # Componentes y pipes reutilizables
+      ├── 📁 assets/                    # Recursos multimedias e imágenes
+      └── 📄 styles.css                 # Estilos globales de la app
 
-💻 Instalación y Configuración Local
-Sigue estos pasos para clonar y ejecutar el proyecto en tu máquina local:
+🚀 Instalación Rápida
+Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 
-Pre-requisitos
-Asegúrate de contar con Node.js y Angular CLI instalados en tu sistema.
+1. Requisitos previos
+Asegúrate de contar con Node.js en tu sistema:
 
-Bash
-node -v
+node -v   # Versión >= 18.x recomendada
 npm -v
-npm install -g @angular/cli
-Pasos para iniciar el entorno
-Clonar el repositorio:
 
-Bash
+2. Clonar el repositorio
+
 git clone [https://github.com/oscarsanchez0712/Taller_fe_SanchezOscar.git](https://github.com/oscarsanchez0712/Taller_fe_SanchezOscar.git)
-Acceder a la carpeta del proyecto:
 
-Bash
+3. Instalar dependencias e Iniciar
+Navega a la carpeta del proyecto Angular, instala los paquetes e inicia el servidor de desarrollo:
+
 cd Taller_fe_SanchezOscar/gym-poder
-Instalar dependencias de Node:
-
-Bash
 npm install
-Levantar el servidor de desarrollo:
+ng serve -o
 
-Bash
-ng serve
-Abre tu navegador y navega a http://localhost:4200/. La aplicación se recargará automáticamente si cambias alguno de los archivos de origen.
+🌐 La aplicación se abrirá automáticamente en tu navegador en http://localhost:4200/.
 
-🧪 Pruebas y Construcción
-Ejecutar pruebas unitarias
-Bash
-ng test
-Compilar para Producción
-Bash
-ng build --configuration production
-Los archivos compilados se generarán en la carpeta dist/.
+👤 Contacto & Créditos
+Desarrollado por Oscar Sánchez
 
-👤 Autor
-Oscar Sánchez - @oscarsanchez0712
+📤 Para actualizarlo en GitHub:
+Ejecuta estos comandos en tu terminal Git Bash:
 
-
----
-
-### Instrucciones para subirlo a GitHub:
-
-1. Crea o reemplaza el archivo `README.md` en la carpeta raíz.
-2. Abre la terminal en Git Bash y ejecuta:
-   ```bash
-   git add README.md
-   git commit -m "docs: agregar README profesional"
-   git push origin main
+git add README.md
+git commit -m "docs: actualizar README con diseño profesional"
+git push origin main
