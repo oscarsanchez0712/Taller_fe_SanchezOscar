@@ -1,0 +1,19 @@
+/* Reseteo básico para que el diseño sea consistente
+   y no haya scroll horizontal en ningún dispositivo */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
